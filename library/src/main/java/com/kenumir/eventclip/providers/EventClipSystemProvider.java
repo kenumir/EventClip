@@ -1,10 +1,10 @@
-package com.hivedi.eventclip.providers;
+package com.kenumir.eventclip.providers;
 
 import android.support.annotation.NonNull;
 
-import com.hivedi.eventclip.proto.EventClipProvider;
-import com.hivedi.eventclip.proto.EventParam;
-import com.hivedi.eventclip.proto.UserParam;
+import com.kenumir.eventclip.proto.EventClipProvider;
+import com.kenumir.eventclip.proto.EventParam;
+import com.kenumir.eventclip.proto.UserParam;
 
 import java.util.Map;
 

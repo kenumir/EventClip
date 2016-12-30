@@ -1,6 +1,6 @@
-package com.hv.eventclipdemo.eventclip;
+package com.kenumir.eventclipdemo.eventclip;
 
-import com.hivedi.eventclip.proto.UserProperty;
+import com.kenumir.eventclip.proto.UserProperty;
 
 /**
  * Created by Hivedi2 on 2016-09-07.

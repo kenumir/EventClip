@@ -1,7 +1,7 @@
-package com.hv.eventclipdemo.eventclip;
+package com.kenumir.eventclipdemo.eventclip;
 
 
-import com.hivedi.eventclip.proto.EventName;
+import com.kenumir.eventclip.proto.EventName;
 
 /**
  * Created by Kenumir on 2016-09-03.

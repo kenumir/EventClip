@@ -1,4 +1,4 @@
-package com.hivedi.eventclip.proto;
+package com.kenumir.eventclip.proto;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

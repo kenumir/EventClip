@@ -1,11 +1,11 @@
-package com.hv.eventclipdemo;
+package com.kenumir.eventclipdemo;
 
 import android.app.Application;
 
-import com.hivedi.eventclip.EventClip;
-import com.hivedi.eventclip.providers.EventClipLogProvider;
-import com.hivedi.eventclip.providers.EventClipSystemProvider;
-import com.hv.eventclipdemo.eventclip.providers.SelectiveProvider;
+import com.kenumir.eventclip.EventClip;
+import com.kenumir.eventclip.providers.EventClipLogProvider;
+import com.kenumir.eventclip.providers.EventClipSystemProvider;
+import com.kenumir.eventclipdemo.eventclip.providers.SelectiveProvider;
 
 /**
  * Created by Kenumir on 2016-09-03.

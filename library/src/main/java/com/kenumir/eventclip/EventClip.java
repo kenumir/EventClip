@@ -1,10 +1,10 @@
-package com.hivedi.eventclip;
+package com.kenumir.eventclip;
 
 import android.support.annotation.NonNull;
 
-import com.hivedi.eventclip.proto.EventClipProvider;
-import com.hivedi.eventclip.proto.EventParam;
-import com.hivedi.eventclip.proto.UserParam;
+import com.kenumir.eventclip.proto.EventClipProvider;
+import com.kenumir.eventclip.proto.EventParam;
+import com.kenumir.eventclip.proto.UserParam;
 
 import java.util.ArrayList;
 
@@ -14,7 +14,7 @@ import java.util.ArrayList;
  */
 public class EventClip {
 
-    volatile static ArrayList<EventClipProvider> providers = new ArrayList<>();
+    private volatile static ArrayList<EventClipProvider> providers = new ArrayList<>();
 
     public static synchronized void registerProvider(@NonNull EventClipProvider provider) {
         providers.add(provider);

@@ -1,4 +1,4 @@
-package com.hivedi.eventclip.proto;
+package com.kenumir.eventclip.proto;
 
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;

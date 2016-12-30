@@ -1,4 +1,4 @@
-package com.hv.eventclipdemo.eventclip.providers;
+package com.kenumir.eventclipdemo.eventclip.providers;
 
 import android.os.AsyncTask;
 import android.support.annotation.NonNull;
@@ -6,9 +6,9 @@ import android.util.Log;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
-import com.hivedi.eventclip.proto.EventClipProvider;
-import com.hivedi.eventclip.proto.EventParam;
-import com.hivedi.eventclip.proto.UserParam;
+import com.kenumir.eventclip.proto.EventClipProvider;
+import com.kenumir.eventclip.proto.EventParam;
+import com.kenumir.eventclip.proto.UserParam;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;

@@ -1,13 +1,14 @@
-package com.hv.eventclipdemo;
+package com.kenumir.eventclipdemo;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.hivedi.eventclip.EventClip;
-import com.hivedi.eventclip.proto.EventParam;
-import com.hv.eventclipdemo.eventclip.EventNames;
-import com.hv.eventclipdemo.eventclip.providers.WebProvider;
+import com.hv.eventclipdemo.R;
+import com.kenumir.eventclip.EventClip;
+import com.kenumir.eventclip.proto.EventParam;
+import com.kenumir.eventclipdemo.eventclip.EventNames;
+import com.kenumir.eventclipdemo.eventclip.providers.WebProvider;
 
 public class WebProviderActivity extends AppCompatActivity {
 
