@@ -18,7 +18,7 @@ public class App extends Application {
 
 Or create own provider
 ```java
-public class MyTestProvider extends EventClipLogProvider {
+public class MyTestProvider extends EventClipProvider {
 
     public MyTestProvider() {
         // constructors
