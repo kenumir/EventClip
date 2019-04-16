@@ -1,6 +1,7 @@
 package com.kenumir.eventclipdemo.eventclip.providers;
 
 import android.support.annotation.NonNull;
+import android.util.Log;
 
 import com.kenumir.eventclip.proto.EventParam;
 import com.kenumir.eventclip.providers.EventClipLogProvider;
@@ -20,6 +21,7 @@ public class SelectiveProvider extends EventClipLogProvider {
     public void deliver(EventParam param) {
         switch(param.getName()) {
             case EventNames.BUTTON_CLICK:
+	            Log.v("SelectiveProvider", "test=" + param.getProviderField(SelectiveProvider.class, "test"));
                 super.deliver(param.changeName(EventNames.BUTTON_PRESS));
                 break;
         }

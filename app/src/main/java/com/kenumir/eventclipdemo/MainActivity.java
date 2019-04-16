@@ -12,6 +12,7 @@ import com.kenumir.eventclip.proto.EventParam;
 import com.kenumir.eventclip.proto.UserParam;
 import com.kenumir.eventclipdemo.eventclip.EventNames;
 import com.kenumir.eventclipdemo.eventclip.UserProperties;
+import com.kenumir.eventclipdemo.eventclip.providers.SelectiveProvider;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     public void handleClick(View view) {
         switch (view.getId()) {
             case R.id.button1:
-                EventClip.deliver(new EventParam(EventNames.BUTTON_CLICK).field("Action", 1));
+                EventClip.deliver(new EventParam(EventNames.BUTTON_CLICK).field("Action", 1).providerField(SelectiveProvider.class, "test", "aaaaaaaa"));
                 break;
             case R.id.button2:
                 EventClip.deliver(new EventParam(EventNames.BUTTON_CLICK).field("Action", 2));
