@@ -35,6 +35,15 @@ public class EventClip {
 	    }
     }
 
+    public static synchronized boolean hasProviderByClass(@NonNull Class<?> cl) {
+    	for(EventClipProvider provider : providers) {
+    		if (cl.isInstance(provider)) {
+    			return true;
+		    }
+	    }
+    	return false;
+    }
+
     public static synchronized void clearProviders() {
         providers.clear();
     }
