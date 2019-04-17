@@ -43,6 +43,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.button3:
                 startActivity(new Intent(this, WebProviderActivity.class));
                 break;
+	        case R.id.button4:
+		        EventClip.unregisterProviderByClass(SelectiveProvider.class);
+		        break;
         }
     }
 }

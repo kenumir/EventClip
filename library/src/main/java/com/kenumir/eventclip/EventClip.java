@@ -7,6 +7,7 @@ import com.kenumir.eventclip.proto.EventParam;
 import com.kenumir.eventclip.proto.UserParam;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * Created by Kenumir on 2016-09-03.
@@ -22,6 +23,16 @@ public class EventClip {
 
     public static synchronized void unregisterProvider(@NonNull EventClipProvider provider) {
         providers.remove(provider);
+    }
+
+    public static void unregisterProviderByClass(@NonNull Class<?> cl) {
+	    Iterator<EventClipProvider> it = providers.iterator();
+	    while (it.hasNext()) {
+		    EventClipProvider provider = it.next();
+		    if (cl.isInstance(provider)) {
+		        it.remove();
+		    }
+	    }
     }
 
     public static synchronized void clearProviders() {
