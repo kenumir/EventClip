@@ -25,7 +25,7 @@ public class EventClip {
         providers.remove(provider);
     }
 
-    public static void unregisterProviderByClass(@NonNull Class<?> cl) {
+    public static synchronized void unregisterProviderByClass(@NonNull Class<?> cl) {
 	    Iterator<EventClipProvider> it = providers.iterator();
 	    while (it.hasNext()) {
 		    EventClipProvider provider = it.next();
